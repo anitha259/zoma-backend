@@ -35,7 +35,7 @@ exports.payment = (req, res) => {
         }
         res.json(paytmParams)
     }).catch(function (error) {
-        console.log(error);
+        console.log(`Something went wrong in Payments ${error}`);
     });
 }
 

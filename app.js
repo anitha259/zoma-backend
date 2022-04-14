@@ -25,5 +25,5 @@ mongoose.connect(serverDB,
             console.log(`Server is running at ${hostname}:${port}`);
         })
     })
-    .catch(err => console.log(err));
+    .catch(err => console.log(`Something went wrong while connecting ${err}`));
 
