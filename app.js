@@ -6,10 +6,10 @@ const router = require('./Router/index');
 
 const app = express();
 
-const port = 9828;
+const port = process.env.PORT || 9828;
 const hostname = 'localhost';
 
-const locID = 'mongodb://127.0.0.1:27017/zomato_re';
+// const locID = 'mongodb://127.0.0.1:27017/zomato_re';
 const serverDB = 'mongodb+srv://zomato_res:anitha2591998@cluster0.oijcg.mongodb.net/zomato_re?retryWrites=true&w=majority';
 
 
