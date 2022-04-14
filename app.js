@@ -14,8 +14,7 @@ const serverDB = 'mongodb+srv://zomato_res:anitha2591998@cluster0.oijcg.mongodb.
 
 const corsOpts = {
     origin: '*',
-    methods: ['GET', 'POST'],
-    allowedHeaders: ['Content-Type']
+    methods: ['GET', 'POST']
 };
  
 app.use(cors(corsOpts));
