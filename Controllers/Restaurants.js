@@ -37,7 +37,6 @@ exports.restaurantFilter = (req, res) => {
 
     Restaurants.find(filterObj).sort({ min_price: sort })
         .then(response => {
-            console.log('resp', response);
             // Pagination Logic
 
             const paginatedResponse = response.slice(startIndex, endIndex);
